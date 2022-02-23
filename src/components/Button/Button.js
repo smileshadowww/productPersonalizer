@@ -1,9 +1,9 @@
 import styles from './Button.module.scss';
 import clsx from 'clsx';
 
-const Button = props => {
+const Button = (props, {className}) => {
     // props.action.preventDefault();
-    return (<button className={clsx(styles.button, props.className)} onClick={props.onClickHandler}
+    return (<button className={clsx(styles.button, className)} onClick={props.onClickHandler}
       >{props.children}</button>)
 }
 
